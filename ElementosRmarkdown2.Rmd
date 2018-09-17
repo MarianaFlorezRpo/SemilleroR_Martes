@@ -1,0 +1,75 @@
+---
+title: "Elementos basicos de Rmarkdown"
+author: "Mariana Flórez Restrepo"
+date: "17 de septiembre de 2018"
+output: 
+  html_document:
+    toc: yes 
+    theme: readable  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      eval =  TRUE, 
+                      fig.align = "right")
+```
+
+# Encabezados con Rmarkdown
+
+encabezado tipo 1 se denota con #  
+encabezado tipo 2 se denota con ##  
+encabezado tipo 3 se denota con ###  
+
+## Subtitulo
+
+### Encabezado tipo tres
+
+# Viñetas
+
+  - Viñeta 1
+    - Subviñeta 1
+        - Subviñeta 1.1
+        
+  + Viñeta 2
+      + Subviñeta 2
+          + subviñeta 2.1
+
+  * Viñeta 3
+      * Subviñeta 3
+          * Subviñeta 3.1
+          
+# Insertando imagen
+<center>
+![](36805434_10155645065337548_6628663090818842624_n.jpg)
+        
+</center>
+
+
+# Insertar Hipervínculo
+
+https://github.com/Excrepaches/stats337
+
+[Aquí](https://github.com/Excrepaches/stats337)
+
+
+# Opciones de texto
+
+*Esto es cursiva*  
+_Esto tambien es cursiva_  
+**Esto es negrilla**  
+__Esto tambien es negrilla__  
+***Esto es cursiva y negrilla***  
+___Esto tambien es cursiva y negrilla___  
+
+
+# Plot con R
+
+```{r}
+plot(iris)
+```
+
+```{r, fig.align= "center"}
+plot(mtcars)
+```
+
+
